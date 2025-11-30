@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout horizontal (modo cientifico) -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="36sp"
+            android:gravity="end|center_vertical"
+            android:padding="12dp"
+            android:background="#DDDDDD"/>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:columnCount="2">
+
+        <Button android:id="@+id/btnSin" android:text="sin"/>
+        <Button android:id="@+id/btnCos" android:text="cos"/>
+        <Button android:id="@+id/btnTan" android:text="tan"/>
+        <Button android:id="@+id/btnSqrt" android:text="sqrt"/>
+        <Button android:id="@+id/btnLog" android:text="log"/>
+        <Button android:id="@+id/btnLn" android:text="ln"/>
+        <Button android:id="@+id/btnPow" android:text="x^y"/>
+        <Button android:id="@+id/btnFact" android:text="!"/>
+        <Button android:id="@+id/btnPi" android:text="pi"/>
+        <Button android:id="@+id/btnE" android:text="e"/>
+
+    </GridLayout>
+</LinearLayout>
